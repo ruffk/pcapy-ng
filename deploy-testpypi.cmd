@@ -1,1 +1,4 @@
 py -m twine upload --repository testpypi dist/*
+
+
+REM pypi-AgENdGVzdC5weXBpLm9yZwIkNjc4YTIxZGUtNDg5Zi00NWRkLWFhMzEtMmU2ZjExYjE5MzVkAAIleyJwZXJtaXNzaW9ucyI6ICJ1c2VyIiwgInZlcnNpb24iOiAxfQAABiBJ38Yp1iVEtrfQ7ErZ8hjh9toC8j-M55Wq1Tr25Ka2aA
