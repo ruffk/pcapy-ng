@@ -3,7 +3,7 @@ import os
 import glob
 from setuptools import setup, Extension
 
-PACKAGE_NAME = 'pcapy-ng-win-amd64'
+PACKAGE_NAME = 'pcapy-ng'
 
 # You might want to change these to reflect your specific configuration
 include_dirs = []
@@ -72,24 +72,12 @@ setup(name=PACKAGE_NAME,
       url="https://github.com/stamparm/pcapy-ng/",
       author="Miroslav Stampar",
       author_email="miroslav@sqlmap.org",
-      maintainer="Kevin Ruff",
-      maintainer_email="ruff.kevin@outlook.com",
+      maintainer="Miroslav Stampar",
+      maintainer_email="miroslav@sqlmap.org",
       platforms=["Unix", "Windows"],
-      description="Python pcap extension (pre-built for win-amd64)",
-      long_description="See the base pcapy-ng project if you need to build this in your own specific environment.",
+      description="Python pcap extension",
+      long_description=read('README'),
       license="Apache",
-      classifiers=[
-          'Development Status :: 5 - Production/Stable',
-          'Environment :: Win32 (MS Windows)',
-          # 'Environment :: MacOS X',
-          'Intended Audience :: Developers',
-          'License :: OSI Approved :: Apache Software License',
-          # 'Operating System :: MacOS',
-          'Operating System :: Microsoft :: Windows',
-          'Programming Language :: Python :: 3',
-          'Topic :: Internet',
-          'Topic :: Utilities',
-      ],
       ext_modules=[Extension(
           name="pcapy",
           sources=sources,
